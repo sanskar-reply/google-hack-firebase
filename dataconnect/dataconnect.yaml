@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "ai-app"
+location: "europe-west2"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "ai-app-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
